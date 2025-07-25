@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pintu Kumar Mandal Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    .header {
+      background: #1c1c1c;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .header-text {
+      max-width: 500px;
+    }
+
+    .header-text h1 {
+      font-size: 2.5rem;
+      color: #00ff99;
+      margin-bottom: 15px;
+    }
+
+    .header-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .resume-btn {
+      background: #00ff99;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background: #00cc7a;
+      transform: scale(1.05);
+    }
+
+    .header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid #00ff99;
+      object-fit: cover;
+      box-shadow: 0 0 25px rgba(0, 255, 153, 0.4);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: float 3s ease-in-out infinite, pulse 2.5s ease-in-out infinite;
+    }
+
+    .header img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px rgba(0, 255, 153, 0.7);
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 25px rgba(0, 255, 153, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 50px rgba(0, 255, 153, 0.8);
+      }
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+      background: #fafafa;
+      flex: 1;
+    }
+
+    .feature-card {
+      background: #19ded7;
+      flex: 1 1 200px;
+      max-width: 260px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .feature-card img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 15px;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .social-section {
+      background: #1c1c1c;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .social-section h3 {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 2rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #00ffea;
+      transform: scale(1.3);
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        text-align: center;
+      }
+      .header img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <section class="header">
+    <div class="header-text">
+      <p>HELLO, I AM</p>
+      <h1>Pintu Kumar Mandal</h1>
+      <p>A dedicated <strong>Computer Science Engineering</strong> student with a strong foundation in programming, problem-solving, and software development.</p>
+      <a href="#" class="resume-btn">Download Resume</a>
+    </div>
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQGX3T5rkUdXzw/profile-displayphoto-shrink_200_200/B4EZcOPZUIHQAc-/0/1748290607832?e=2147483647&v=beta&t=G1FZnEXpexRD-ecJNDSglYMtNSN4QpMvfbHSyOItaP0" alt="Pintu Kumar Mandal">
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <img src="https://img.icons8.com/color/48/laptop--v1.png" alt="Programming">
+      <h3>Programming</h3>
+      <p>Proficient in languages like C, Python, and JavaScript.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/fluency/48/maintenance.png" alt="Development">
+      <h3>Development</h3>
+      <p>Experience in web development and software engineering principles.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/color/48/brain.png" alt="Problem Solving">
+      <h3>Problem Solving</h3>
+      <p>Strong analytical skills and interest in algorithms and data structures.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://img.icons8.com/color/48/books.png" alt="Lifelong Learner">
+      <h3>Lifelong Learner</h3>
+      <p>Committed to learning new technologies and keeping skills up to date.</p>
+    </div>
+  </section>
+
+  <section class="social-section">
+    <h3>Connect with Me</h3>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/pintu-kumar-mandal-31bb12367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/sanskari_pintu_8?igsh=MW5kdTRrb2U1ZDF1dw==" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/pintu67h" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+</body>
+</html>
